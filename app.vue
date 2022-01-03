@@ -1,4 +1,4 @@
-<script>
+<script setup>
 useMeta({
 	bodyAttrs: {
 		class: "bg-gray-900 text-gray-50",
