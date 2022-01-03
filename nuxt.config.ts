@@ -1,6 +1,15 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from "nuxt3"
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-
+	buildModules: ["@unocss/nuxt"],
+	meta: {
+		bodyAttrs: {
+			// FIXME: UnoCSS not scan file nuxt config
+			class: "bg-gray-900 text-gray-50",
+		},
+	},
+	unocss: {
+		uno: true,
+		preflight: true,
+	},
 })
